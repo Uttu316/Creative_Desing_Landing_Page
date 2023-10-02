@@ -23,23 +23,7 @@
   <body>
     <section class="hero-section">
       <header class="hero-header">
-        <nav class="hero-nav">
-          <a href="#" class="hero-nav-item"
-            ><i class="fa-solid fa-house"></i><span> Home </span></a
-          >
-          <a href="#about" class="hero-nav-item"
-            ><i class="fa-solid fa-circle-info"></i><span> About </span></a
-          >
-          <a href="#services" class="hero-nav-item"
-            ><i class="fa-solid fa-folder"></i><span> Services </span></a
-          >
-          <a href="#faqs" class="hero-nav-item"
-            ><i class="fa-solid fa-gear"></i><span> FAQs </span></a
-          >
-
-          <a href="#" class="hero-nav-item"
-            ><i class="fa-solid fa-message"></i><span> Contact </span></a
-          >
+        <nav id="d-sidebar" class="hero-nav">
         </nav>
         <div class="hero-nav-mobile">
           <i class="fa-solid fa-bars" id="menu-btn"></i>
@@ -341,30 +325,5 @@
     </section>
     <footer></footer>
   </body>
-  <script>
-   const menuBtn = document.getElementById('menu-btn')
-   menuBtn.addEventListener('click',function(){
-    document.body.style.overflow = 'hidden'
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('show-sidebar')
-
-    const overlay = document.getElementById('overlay');
-    overlay.classList.toggle('show-overlay')
-   })
-
-   const closeBtn = document.getElementById('sidebar-close-btn')
-   closeBtn.addEventListener('click',onClose)
-   
-   const overlay = document.getElementById('overlay')
-   overlay.addEventListener('click',onClose)
-
-   function onClose(){
-    document.body.style.overflow = 'auto'
-    const sidebar = document.getElementById('sidebar');
-    sidebar.classList.toggle('show-sidebar')
-
-    const overlay = document.getElementById('overlay');
-    overlay.classList.toggle('show-overlay')
-   }
-  </script>
+  <script src="./scripts/sidebar.js"></script>
 </html>
