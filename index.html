@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
       rel="stylesheet"
     />
+    <script async src="./scripts/sidebar.js"></script>
   </head>
   <body>
     <section class="hero-section">
@@ -199,8 +200,11 @@
           </span>
         </p>
         <div class="signup-form">
-          <form>
-            <input type="email" name="email" placeholder="email@example.com" />
+          <form id="subscription-form">
+            <div  id="subscription-email">
+              <input  type="email" name="email" placeholder="email@example.com" />
+              <p class="error"></p>
+            </div>
             <button>Signup</button>
           </form>
         </div>
@@ -325,5 +329,6 @@
     </section>
     <footer></footer>
   </body>
-  <script src="./scripts/sidebar.js"></script>
+ 
+  <script src="./scripts/form.js"></script>
 </html>
