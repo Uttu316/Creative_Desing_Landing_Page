@@ -24,11 +24,10 @@
   <body>
     <section class="hero-section">
       <header class="hero-header">
-        <nav id="d-sidebar" class="hero-nav">
-        </nav>
+        <nav id="d-sidebar" class="hero-nav"></nav>
         <div class="hero-nav-mobile">
           <i class="fa-solid fa-bars" id="menu-btn"></i>
-          <aside id="sidebar" class=" sidebar-container ">
+          <aside id="sidebar" class="sidebar-container">
             <div class="cross-container" id="sidebar-close-btn">
               <i class="fa-solid fa-xmark"></i>
             </div>
@@ -60,8 +59,7 @@
               </li>
             </ul>
           </aside>
-          <div id="overlay" class="overlay-container ">
-          </div>
+          <div id="overlay" class="overlay-container"></div>
         </div>
       </header>
       <h1 class="hero-heading">Creative Agency</h1>
@@ -201,8 +199,12 @@
         </p>
         <div class="signup-form">
           <form id="subscription-form">
-            <div  id="subscription-email">
-              <input  type="email" name="email" placeholder="email@example.com" />
+            <div id="subscription-email">
+              <input
+                type="email"
+                name="email"
+                placeholder="email@example.com"
+              />
               <p class="error"></p>
             </div>
             <button>Signup</button>
@@ -327,8 +329,53 @@
         </div>
       </div>
     </section>
+    <section class="container" id="contact">
+      <h1 class="container-heading">
+        <span class="ribion">Contact Us</span>
+      </h1>
+      <div class="contac-form-container">
+        <div class="contact-image-container">
+          <img src="./assets/contac-form.svg" class="contact-image" />
+        </div>
+        <form class="contact-form">
+          <div class="contac-input-item">
+            <label for="contact-name"> Name </label>
+            <input
+              type="text"
+              name="name"
+              id="contact-name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="contac-input-item">
+            <label for="contact-email"> Email </label>
+            <input
+              type="email"
+              name="email"
+              id="contact-email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="contac-input-item">
+            <label for="contact-message"> Message </label>
+            <textarea
+              name="message"
+              id="contact-message"
+              rows="4"
+              placeholder="Enter your message here..."
+            ></textarea>
+          </div>
+          <div class="contact-form-actions">
+            <button disabled class="contact-form-btn">
+              Submit <i class="fa-solid fa-message"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+      
+    </section>
     <footer></footer>
   </body>
- 
+
   <script src="./scripts/form.js"></script>
 </html>
