@@ -337,7 +337,7 @@
         <div class="contact-image-container">
           <img src="./assets/contac-form.svg" class="contact-image" />
         </div>
-        <form class="contact-form">
+        <form  id="contactForm" class="contact-form">
           <div class="contac-input-item">
             <label for="contact-name"> Name </label>
             <input
@@ -346,6 +346,8 @@
               id="contact-name"
               placeholder="Enter your name"
             />
+            <p class="error">
+            </p>
           </div>
           <div class="contac-input-item">
             <label for="contact-email"> Email </label>
@@ -366,7 +368,7 @@
             ></textarea>
           </div>
           <div class="contact-form-actions">
-            <button disabled class="contact-form-btn">
+            <button disabled id="contactFormbtn" class="contact-form-btn">
               Submit <i class="fa-solid fa-message"></i>
             </button>
           </div>
@@ -378,4 +380,5 @@
   </body>
 
   <script src="./scripts/form.js"></script>
+  <script src="./scripts/contactForm.js"></script>
 </html>
